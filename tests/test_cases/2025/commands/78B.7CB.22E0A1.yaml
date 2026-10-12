@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E0A1
+test_cases:
+- expected_values:
+    H6HEV_BMS_MODULE_T_AVERAGE: 12
+  response: 7CB0462E0A134
+- expected_values:
+    H6HEV_BMS_MODULE_T_AVERAGE: 30
+  response: 7CB0462E0A146

@@ -1,0 +1,5 @@
+command_id: 78B.7CB.22E0F5
+test_cases:
+- expected_values:
+    H6HEV_BMS_PACK_SOH: 98
+  response: 7CB0462E0F562

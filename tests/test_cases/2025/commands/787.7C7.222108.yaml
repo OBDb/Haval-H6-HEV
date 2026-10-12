@@ -1,0 +1,8 @@
+command_id: 787.7C7.222108
+test_cases:
+- expected_values:
+    H6HEV_MCU_TMCU_INVERTOR_T: 17
+  response: 7C70462210839
+- expected_values:
+    H6HEV_MCU_TMCU_INVERTOR_T: 55
+  response: 7C7046221085F

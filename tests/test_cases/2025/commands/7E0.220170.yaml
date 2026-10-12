@@ -1,0 +1,17 @@
+command_id: 7E0.220170
+test_cases:
+- expected_values:
+    H6HEV_KNOCK_RETARD_CYL_1: 0
+  response: '7E80462017000'
+- expected_values:
+    H6HEV_KNOCK_RETARD_CYL_1: -3
+  response: 7E804620170FC
+- expected_values:
+    H6HEV_KNOCK_RETARD_CYL_1: -2.25
+  response: 7E804620170FD
+- expected_values:
+    H6HEV_KNOCK_RETARD_CYL_1: -1.5
+  response: 7E804620170FE
+- expected_values:
+    H6HEV_KNOCK_RETARD_CYL_1: -0.75
+  response: 7E804620170FF

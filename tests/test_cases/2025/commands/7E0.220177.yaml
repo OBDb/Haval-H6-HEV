@@ -1,0 +1,14 @@
+command_id: 7E0.220177
+test_cases:
+- expected_values:
+    H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_4: 0.0074
+  response: '7E8056201770061'
+- expected_values:
+    H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_4: 0.01938
+  response: 7E80562017700FE
+- expected_values:
+    H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_4: 0.01961
+  response: '7E8056201770101'
+- expected_values:
+    H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_4: 0.06256
+  response: '7E8056201770334'

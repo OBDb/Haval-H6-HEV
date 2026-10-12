@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.220154
+test_cases:
+- expected_values:
+    H6HEV_INTAKE_VVT_TARGET: 4.5552
+  response: '7E8056201540248'
+- expected_values:
+    H6HEV_INTAKE_VVT_TARGET: 17.9556
+  response: 7E80562015408FE
+- expected_values:
+    H6HEV_INTAKE_VVT_TARGET: 17.9712
+  response: '7E8056201540900'
+- expected_values:
+    H6HEV_INTAKE_VVT_TARGET: -0.7644
+  response: 7E805620154FF9E

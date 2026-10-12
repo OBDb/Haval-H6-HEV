@@ -1,0 +1,11 @@
+command_id: 78B.7CB.22E0F2
+test_cases:
+- expected_values:
+    H6HEV_BMS_MIN_CELL_SOC: 42.2
+  response: 7CB0562E0F201A6
+- expected_values:
+    H6HEV_BMS_MIN_CELL_SOC: 51.1
+  response: 7CB0562E0F201FF
+- expected_values:
+    H6HEV_BMS_MIN_CELL_SOC: 51.6
+  response: 7CB0562E0F20204

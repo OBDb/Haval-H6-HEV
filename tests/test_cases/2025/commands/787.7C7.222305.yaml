@@ -1,0 +1,8 @@
+command_id: 787.7C7.222305
+test_cases:
+- expected_values:
+    H6HEV_MCU_GMCU_TORQUE_MIN: -210
+  response: 7C705622305032D
+- expected_values:
+    H6HEV_MCU_GMCU_TORQUE_MIN: 0
+  response: 7C70562230503FF

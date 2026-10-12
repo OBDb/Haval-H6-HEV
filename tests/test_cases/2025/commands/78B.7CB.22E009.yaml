@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E009
+test_cases:
+- expected_values:
+    H6HEV_BMS_CELL_VOLTAGE_MIN: 3615
+  response: 7CB0562E0090E1F
+- expected_values:
+    H6HEV_BMS_CELL_VOLTAGE_MIN: 3829
+  response: 7CB0562E0090EF5

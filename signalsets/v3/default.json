@@ -1,4 +1,388 @@
 { "commands": [
-
+{ "hdr": "763", "rax": "7A3", "cmd": {"22": "A012"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_HVAC_EVAPORATOR_T_FRONT", "path": "Climate", "fmt": { "len": 16, "max": 655.25, "min": -20, "div": 10, "add": -20, "unit": "celsius" }, "name": "Evaporator temperature, front"}
+  ]},
+{ "hdr": "763", "rax": "7A3", "cmd": {"22": "A019"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_HVAC_CABIN_T_FRONT", "path": "Climate", "fmt": { "len": 16, "max": 655.15, "min": -30, "div": 10, "add": -30, "unit": "celsius" }, "name": "Cabin temperature, front"}
+  ]},
+{ "hdr": "76C", "rax": "7AC", "fcm1": true, "dbg": true, "cmd": {"22": "0210"}, "freq": 15,
+  "signals": [
+    {"id": "H6HEV_FL_TIRE_P", "path": "Tires", "fmt": {           "len": 8, "max": 349,             "mul": 137, "div": 100,             "unit": "kilopascal" }, "name": "Front left tire pressure"},
+    {"id": "H6HEV_FL_TIRE_T", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 205, "min": -50,                         "add": -50, "unit": "celsius"    }, "name": "Front left tire temperature"},
+    {"id": "H6HEV_FR_TIRE_P", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 349,             "mul": 137, "div": 100,             "unit": "kilopascal" }, "name": "Front right tire pressure"},
+    {"id": "H6HEV_FR_TIRE_T", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 205, "min": -50,                         "add": -50, "unit": "celsius"    }, "name": "Front right tire temperature"},
+    {"id": "H6HEV_RL_TIRE_P", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 349,             "mul": 137, "div": 100,             "unit": "kilopascal" }, "name": "Rear left tire pressure"},
+    {"id": "H6HEV_RL_TIRE_T", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 205, "min": -50,                         "add": -50, "unit": "celsius"    }, "name": "Rear left tire temperature"},
+    {"id": "H6HEV_RR_TIRE_P", "path": "Tires", "fmt": {"bix": 48, "len": 8, "max": 349,             "mul": 137, "div": 100,             "unit": "kilopascal" }, "name": "Rear right tire pressure"},
+    {"id": "H6HEV_RR_TIRE_T", "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 205, "min": -50,                         "add": -50, "unit": "celsius"    }, "name": "Rear right tire temperature"}
+  ]},
+{ "hdr": "782", "rax": "7C2", "fcm1": true, "cmd": {"22": "6303"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_FRONT_LEFT_VSS",  "path": "Movement", "fmt": {           "len": 16, "max": 3686.34375, "mul": 0.05625, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "H6HEV_FRONT_RIGHT_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 3686.34375, "mul": 0.05625, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "H6HEV_REAR_LEFT_VSS",   "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 3686.34375, "mul": 0.05625, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "H6HEV_REAR_RIGHT_VSS",  "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 3686.34375, "mul": 0.05625, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "1109"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_GMCU_MOTOR_T_1", "path": "Drivetrain", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Motor temperature, generator"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "1110"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_GMCU_MOTOR_SPEED", "path": "Drivetrain", "fmt": { "len": 16, "max": 32767, "min": -32768, "add": -32768, "unit": "rpm" }, "name": "Motor speed, generator"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "1111"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_GMCU_MOTOR_T_2", "path": "Drivetrain", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Motor winding temperature, generator"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "2108"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_TMCU_INVERTOR_T", "path": "Drivetrain", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Inverter temperature"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "2109"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_TMCU_MOTOR_T_1", "path": "Drivetrain", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Motor temperature"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "2110"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_TMCU_MOTOR_SPEED", "path": "Drivetrain", "fmt": { "len": 16, "max": 32767, "min": -32768, "add": -32768, "unit": "rpm" }, "name": "Motor speed"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "2111"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_TMCU_MOTOR_T_2", "path": "Drivetrain", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Motor winding temperature"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "2304"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_GMCU_TORQUE_MAX", "path": "Drivetrain", "fmt": { "len": 16, "max": 65535, "unit": "newtonMeters" }, "name": "Torque maximum, generator"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "cmd": {"22": "2305"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MCU_GMCU_TORQUE_MIN", "path": "Drivetrain", "fmt": { "len": 16, "max": 64512, "min": -1023, "add": -1023, "unit": "newtonMeters" }, "name": "Torque minimum, generator"}
+  ]},
+{ "hdr": "787", "rax": "7C7", "fcm1": true, "dbg": true, "cmd": {"22": "2306"}, "freq": 0.25,
+  "signals": [
+    {"id": "H6HEV_MCU_GMCU_TORQUE", "path": "Drivetrain", "fmt": { "len": 16, "max": 64512, "min": -1023, "add": -1023, "unit": "newtonMeters" }, "name": "Torque, generator, actual"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E006"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_VOLTAGE", "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "volts" }, "name": "HV battery voltage", "suggestedMetric": "tractionBatteryVoltage"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E007"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_TOTAL_CELL_VOLTAGES", "path": "Battery", "fmt": { "len": 16, "max": 65536, "min": 1, "add": 1, "unit": "volts" }, "name": "Cell voltages, total"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E008"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_CELL_VOLTAGE_MAX", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Cell voltage, maximum"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E009"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_CELL_VOLTAGE_MIN", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Cell voltage, minimum"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_MAX_CELL_VOLTAGE_POSITION", "path": "Battery", "fmt": { "len": 8, "max": 256, "min": 1, "add": 1, "unit": "scalar" }, "name": "Cell position, maximum voltage"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E00B"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_MIN_CELL_VOLTAGE_POSITION", "path": "Battery", "fmt": { "len": 8, "max": 256, "min": 1, "add": 1, "unit": "scalar" }, "name": "Cell position, minimum voltage"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E088"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_MODULE_T_MAXIMUM", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Module temperature, maximum"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E089"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_MODULE_T_MINIMUM", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Module temperature, minimum"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0A1"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_MODULE_T_AVERAGE", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Module temperature, average"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0A4"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_BUS_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 11907, "min": -1200, "div": 5, "add": -1200, "unit": "amps" }, "name": "Battery current, bus"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0C6"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_DISCHARGE_CURRENT_LIMIT", "path": "Battery", "fmt": { "len": 16, "max": 11907, "min": -1200, "div": 5, "add": -1200, "unit": "amps" }, "name": "Discharge current limit, pack"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0C8"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_RECHARGE_CURRENT_LIMIT", "path": "Battery", "fmt": { "len": 16, "max": 11907, "min": -1200, "div": 5, "add": -1200, "unit": "amps" }, "name": "Recharge current limit, pack"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0DD"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_LAST_SLEEP_DURATION", "path": "Battery", "fmt": { "len": 32, "max": 4294967295, "unit": "seconds" }, "name": "Sleep duration, last"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0E4"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_LOOP_INLET_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant inlet temperature, pack"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0F1"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_MAX_CELL_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "Cell state of charge, maximum"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0F2"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_MIN_CELL_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "Cell state of charge, minimum"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0F4"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_BATT_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0F5"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_SOH", "path": "Battery", "fmt": { "len": 8, "max": 100, "unit": "percent" }, "name": "State of health", "suggestedMetric": "stateOfHealth"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E0F6"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_SOE", "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "kilowattHours" }, "name": "State of energy", "suggestedMetric": "tractionBatteryCapacity"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "fcm1": true, "dbg": true, "cmd": {"22": "E114"}, "freq": 1,
+  "signals": [
+    {"id": "H6HEV_BAT_CELL_01", "path": "Battery", "fmt": {             "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 01"},
+    {"id": "H6HEV_BAT_CELL_02", "path": "Battery", "fmt": {"bix": 16,   "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 02"},
+    {"id": "H6HEV_BAT_CELL_03", "path": "Battery", "fmt": {"bix": 32,   "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 03"},
+    {"id": "H6HEV_BAT_CELL_04", "path": "Battery", "fmt": {"bix": 48,   "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 04"},
+    {"id": "H6HEV_BAT_CELL_05", "path": "Battery", "fmt": {"bix": 64,   "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 05"},
+    {"id": "H6HEV_BAT_CELL_06", "path": "Battery", "fmt": {"bix": 80,   "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 06"},
+    {"id": "H6HEV_BAT_CELL_07", "path": "Battery", "fmt": {"bix": 96,   "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 07"},
+    {"id": "H6HEV_BAT_CELL_08", "path": "Battery", "fmt": {"bix": 112,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 08"},
+    {"id": "H6HEV_BAT_CELL_09", "path": "Battery", "fmt": {"bix": 128,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 09"},
+    {"id": "H6HEV_BAT_CELL_10", "path": "Battery", "fmt": {"bix": 144,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 10"},
+    {"id": "H6HEV_BAT_CELL_11", "path": "Battery", "fmt": {"bix": 160,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 11"},
+    {"id": "H6HEV_BAT_CELL_12", "path": "Battery", "fmt": {"bix": 176,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 12"},
+    {"id": "H6HEV_BAT_CELL_13", "path": "Battery", "fmt": {"bix": 192,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 13"},
+    {"id": "H6HEV_BAT_CELL_14", "path": "Battery", "fmt": {"bix": 208,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 14"},
+    {"id": "H6HEV_BAT_CELL_15", "path": "Battery", "fmt": {"bix": 224,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 15"},
+    {"id": "H6HEV_BAT_CELL_16", "path": "Battery", "fmt": {"bix": 240,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 16"},
+    {"id": "H6HEV_BAT_CELL_17", "path": "Battery", "fmt": {"bix": 256,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 17"},
+    {"id": "H6HEV_BAT_CELL_18", "path": "Battery", "fmt": {"bix": 272,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 18"},
+    {"id": "H6HEV_BAT_CELL_19", "path": "Battery", "fmt": {"bix": 288,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 19"},
+    {"id": "H6HEV_BAT_CELL_20", "path": "Battery", "fmt": {"bix": 304,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 20"},
+    {"id": "H6HEV_BAT_CELL_21", "path": "Battery", "fmt": {"bix": 320,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 21"},
+    {"id": "H6HEV_BAT_CELL_22", "path": "Battery", "fmt": {"bix": 336,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 22"},
+    {"id": "H6HEV_BAT_CELL_23", "path": "Battery", "fmt": {"bix": 352,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 23"},
+    {"id": "H6HEV_BAT_CELL_24", "path": "Battery", "fmt": {"bix": 368,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 24"},
+    {"id": "H6HEV_BAT_CELL_25", "path": "Battery", "fmt": {"bix": 384,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 25"},
+    {"id": "H6HEV_BAT_CELL_26", "path": "Battery", "fmt": {"bix": 400,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 26"},
+    {"id": "H6HEV_BAT_CELL_27", "path": "Battery", "fmt": {"bix": 416,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 27"},
+    {"id": "H6HEV_BAT_CELL_28", "path": "Battery", "fmt": {"bix": 432,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 28"},
+    {"id": "H6HEV_BAT_CELL_29", "path": "Battery", "fmt": {"bix": 448,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 29"},
+    {"id": "H6HEV_BAT_CELL_30", "path": "Battery", "fmt": {"bix": 464,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 30"},
+    {"id": "H6HEV_BAT_CELL_31", "path": "Battery", "fmt": {"bix": 480,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 31"},
+    {"id": "H6HEV_BAT_CELL_32", "path": "Battery", "fmt": {"bix": 496,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 32"},
+    {"id": "H6HEV_BAT_CELL_33", "path": "Battery", "fmt": {"bix": 512,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 33"},
+    {"id": "H6HEV_BAT_CELL_34", "path": "Battery", "fmt": {"bix": 528,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 34"},
+    {"id": "H6HEV_BAT_CELL_35", "path": "Battery", "fmt": {"bix": 544,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 35"},
+    {"id": "H6HEV_BAT_CELL_36", "path": "Battery", "fmt": {"bix": 560,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 36"},
+    {"id": "H6HEV_BAT_CELL_37", "path": "Battery", "fmt": {"bix": 576,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 37"},
+    {"id": "H6HEV_BAT_CELL_38", "path": "Battery", "fmt": {"bix": 592,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 38"},
+    {"id": "H6HEV_BAT_CELL_39", "path": "Battery", "fmt": {"bix": 608,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 39"},
+    {"id": "H6HEV_BAT_CELL_40", "path": "Battery", "fmt": {"bix": 624,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 40"},
+    {"id": "H6HEV_BAT_CELL_41", "path": "Battery", "fmt": {"bix": 640,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 41"},
+    {"id": "H6HEV_BAT_CELL_42", "path": "Battery", "fmt": {"bix": 656,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 42"},
+    {"id": "H6HEV_BAT_CELL_43", "path": "Battery", "fmt": {"bix": 672,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 43"},
+    {"id": "H6HEV_BAT_CELL_44", "path": "Battery", "fmt": {"bix": 688,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 44"},
+    {"id": "H6HEV_BAT_CELL_45", "path": "Battery", "fmt": {"bix": 704,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 45"},
+    {"id": "H6HEV_BAT_CELL_46", "path": "Battery", "fmt": {"bix": 720,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 46"},
+    {"id": "H6HEV_BAT_CELL_47", "path": "Battery", "fmt": {"bix": 736,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 47"},
+    {"id": "H6HEV_BAT_CELL_48", "path": "Battery", "fmt": {"bix": 752,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 48"},
+    {"id": "H6HEV_BAT_CELL_49", "path": "Battery", "fmt": {"bix": 768,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 49"},
+    {"id": "H6HEV_BAT_CELL_50", "path": "Battery", "fmt": {"bix": 784,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 50"},
+    {"id": "H6HEV_BAT_CELL_51", "path": "Battery", "fmt": {"bix": 800,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 51"},
+    {"id": "H6HEV_BAT_CELL_52", "path": "Battery", "fmt": {"bix": 816,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 52"},
+    {"id": "H6HEV_BAT_CELL_53", "path": "Battery", "fmt": {"bix": 832,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 53"},
+    {"id": "H6HEV_BAT_CELL_54", "path": "Battery", "fmt": {"bix": 848,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 54"},
+    {"id": "H6HEV_BAT_CELL_55", "path": "Battery", "fmt": {"bix": 864,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 55"},
+    {"id": "H6HEV_BAT_CELL_56", "path": "Battery", "fmt": {"bix": 880,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 56"},
+    {"id": "H6HEV_BAT_CELL_57", "path": "Battery", "fmt": {"bix": 896,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 57"},
+    {"id": "H6HEV_BAT_CELL_58", "path": "Battery", "fmt": {"bix": 912,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 58"},
+    {"id": "H6HEV_BAT_CELL_59", "path": "Battery", "fmt": {"bix": 928,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 59"},
+    {"id": "H6HEV_BAT_CELL_60", "path": "Battery", "fmt": {"bix": 944,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 60"},
+    {"id": "H6HEV_BAT_CELL_61", "path": "Battery", "fmt": {"bix": 960,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 61"},
+    {"id": "H6HEV_BAT_CELL_62", "path": "Battery", "fmt": {"bix": 976,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 62"},
+    {"id": "H6HEV_BAT_CELL_63", "path": "Battery", "fmt": {"bix": 992,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 63"},
+    {"id": "H6HEV_BAT_CELL_64", "path": "Battery", "fmt": {"bix": 1008, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 64"},
+    {"id": "H6HEV_BAT_CELL_65", "path": "Battery", "fmt": {"bix": 1024, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 65"},
+    {"id": "H6HEV_BAT_CELL_66", "path": "Battery", "fmt": {"bix": 1040, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 66"},
+    {"id": "H6HEV_BAT_CELL_67", "path": "Battery", "fmt": {"bix": 1056, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 67"},
+    {"id": "H6HEV_BAT_CELL_68", "path": "Battery", "fmt": {"bix": 1072, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 68"},
+    {"id": "H6HEV_BAT_CELL_69", "path": "Battery", "fmt": {"bix": 1088, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 69"},
+    {"id": "H6HEV_BAT_CELL_70", "path": "Battery", "fmt": {"bix": 1104, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 70"},
+    {"id": "H6HEV_BAT_CELL_71", "path": "Battery", "fmt": {"bix": 1120, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 71"},
+    {"id": "H6HEV_BAT_CELL_72", "path": "Battery", "fmt": {"bix": 1136, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 72"},
+    {"id": "H6HEV_BAT_CELL_73", "path": "Battery", "fmt": {"bix": 1152, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 73"},
+    {"id": "H6HEV_BAT_CELL_74", "path": "Battery", "fmt": {"bix": 1168, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 74"},
+    {"id": "H6HEV_BAT_CELL_75", "path": "Battery", "fmt": {"bix": 1184, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 75"},
+    {"id": "H6HEV_BAT_CELL_76", "path": "Battery", "fmt": {"bix": 1200, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 76"},
+    {"id": "H6HEV_BAT_CELL_77", "path": "Battery", "fmt": {"bix": 1216, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 77"},
+    {"id": "H6HEV_BAT_CELL_78", "path": "Battery", "fmt": {"bix": 1232, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 78"},
+    {"id": "H6HEV_BAT_CELL_79", "path": "Battery", "fmt": {"bix": 1248, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 79"},
+    {"id": "H6HEV_BAT_CELL_80", "path": "Battery", "fmt": {"bix": 1264, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 80"},
+    {"id": "H6HEV_BAT_CELL_81", "path": "Battery", "fmt": {"bix": 1280, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 81"},
+    {"id": "H6HEV_BAT_CELL_82", "path": "Battery", "fmt": {"bix": 1296, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 82"},
+    {"id": "H6HEV_BAT_CELL_83", "path": "Battery", "fmt": {"bix": 1312, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 83"},
+    {"id": "H6HEV_BAT_CELL_84", "path": "Battery", "fmt": {"bix": 1328, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 84"},
+    {"id": "H6HEV_BAT_CELL_85", "path": "Battery", "fmt": {"bix": 1344, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 85"},
+    {"id": "H6HEV_BAT_CELL_86", "path": "Battery", "fmt": {"bix": 1360, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 86"},
+    {"id": "H6HEV_BAT_CELL_87", "path": "Battery", "fmt": {"bix": 1376, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 87"},
+    {"id": "H6HEV_BAT_CELL_88", "path": "Battery", "fmt": {"bix": 1392, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 88"},
+    {"id": "H6HEV_BAT_CELL_89", "path": "Battery", "fmt": {"bix": 1408, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 89"},
+    {"id": "H6HEV_BAT_CELL_90", "path": "Battery", "fmt": {"bix": 1424, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 90"},
+    {"id": "H6HEV_BAT_CELL_91", "path": "Battery", "fmt": {"bix": 1440, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 91"},
+    {"id": "H6HEV_BAT_CELL_92", "path": "Battery", "fmt": {"bix": 1456, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 92"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "fcm1": true, "dbg": true, "cmd": {"22": "E115"}, "freq": 5,
+  "signals": [
+    {"id": "H6HEV_BMS_MODULE_1_T", "path": "Battery", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 1 temperature"},
+    {"id": "H6HEV_BMS_MODULE_2_T", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 2 temperature"},
+    {"id": "H6HEV_BMS_MODULE_3_T", "path": "Battery", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 3 temperature"},
+    {"id": "H6HEV_BMS_MODULE_4_T", "path": "Battery", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 4 temperature"},
+    {"id": "H6HEV_BMS_MODULE_5_T", "path": "Battery", "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 5 temperature"},
+    {"id": "H6HEV_BMS_MODULE_6_T", "path": "Battery", "fmt": {"bix": 40, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 6 temperature"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E13D"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_2S_DISCHARGE_POWER_LIMIT", "path": "Battery", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilowatts" }, "name": "Discharge power limit, pack, 2 seconds"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E13E"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_10S_DISCHARGE_POWER_LIMIT", "path": "Battery", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilowatts" }, "name": "Discharge power limit, pack, 10 seconds"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E13F"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_2S_RECHARGE_POWER_LIMIT", "path": "Battery", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilowatts" }, "name": "Recharge power limit, pack, 2 seconds"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E140"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_10S_RECHARGE_POWER_LIMIT", "path": "Battery", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilowatts" }, "name": "Recharge power limit, pack, 10 seconds"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E15B"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_ACCUMULATED_CHARGE_1", "path": "Battery", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "ampereHours" }, "name": "Accumulated charge, pack, counter 1"}
+  ]},
+{ "hdr": "78B", "rax": "7CB", "cmd": {"22": "E15C"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BMS_PACK_ACCUMULATED_CHARGE_2", "path": "Battery", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "ampereHours" }, "name": "Accumulated charge, pack, counter 2"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0106"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_FUEL_LEVEL_LITERS", "path": "Fuel", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "liters" }, "name": "Fuel level, liters", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0107"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_OIL_T", "path": "Engine", "fmt": { "len": 16, "max": 1262.793795, "min": -273.15, "mul": 0.023437, "add": -273.15, "unit": "celsius" }, "name": "Oil temperature", "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "010F"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BOOST_PRESSURE_ACTUAL", "path": "Engine", "fmt": { "len": 16, "max": 511.9921875, "div": 128, "unit": "kilopascal" }, "name": "Boost pressure, actual"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0111"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_FUEL_FLOW", "path": "Fuel", "fmt": { "len": 16, "max": 281.2473846, "mul": 0.00429156, "unit": "liters" }, "name": "Fuel flow"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0112"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BOOST_PRESSURE_TARGET", "path": "Engine", "fmt": { "len": 16, "max": 511.9921875, "div": 128, "unit": "kilopascal" }, "name": "Boost pressure, target"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0113"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_TURBOCHARGER_INLET_PRESSURE", "path": "Engine", "fmt": { "len": 16, "max": 511.9921875, "div": 128, "unit": "kilopascal" }, "name": "Turbocharger inlet pressure"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0114"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_TURBOCHARGER_INLET_T", "path": "Engine", "fmt": { "len": 16, "max": 1262.793795, "min": -273.15, "mul": 0.023437, "add": -273.15, "unit": "celsius" }, "name": "Turbocharger inlet temperature"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0132"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear position"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "016A"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_BOOST_PRESSURE_VALUE", "path": "Engine", "fmt": { "len": 16, "max": 511.9921875, "div": 128, "unit": "kilopascal" }, "name": "Boost pressure"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "016D"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_INJECTION_PULSE_WIDTH", "path": "Engine", "fmt": { "len": 32, "max": 4294967.2949999999, "div": 1000, "unit": "milliseconds" }, "name": "Injection pulse width"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0170"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_RETARD_CYL_1", "path": "Engine", "fmt": { "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4, "sign": true, "unit": "degrees" }, "name": "Knock retard, cylinder 1"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0171"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_RETARD_CYL_2", "path": "Engine", "fmt": { "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4, "sign": true, "unit": "degrees" }, "name": "Knock retard, cylinder 2"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0172"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_RETARD_CYL_3", "path": "Engine", "fmt": { "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4, "sign": true, "unit": "degrees" }, "name": "Knock retard, cylinder 3"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0173"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_RETARD_CYL_4", "path": "Engine", "fmt": { "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4, "sign": true, "unit": "degrees" }, "name": "Knock retard, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0174"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_1", "path": "Engine", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "Knock sensor voltage, cylinder 1"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0175"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_2", "path": "Engine", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "Knock sensor voltage, cylinder 2"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0176"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_3", "path": "Engine", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "Knock sensor voltage, cylinder 3"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0177"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_KNOCK_SENSOR_VOLTAGE_CYL_4", "path": "Engine", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "Knock sensor voltage, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "017F"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MISFIRES_TOTAL", "path": "Engine.Misfires", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires, total count"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0180"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MISFIRES_CYL_1", "path": "Engine.Misfires", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0181"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MISFIRES_CYL_3", "path": "Engine.Misfires", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 3"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0182"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MISFIRES_CYL_4", "path": "Engine.Misfires", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "0183"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_MISFIRES_CYL_2", "path": "Engine.Misfires", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"}
+  ]},
+{ "hdr": "7E0", "cmd": {"22": "210C"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_AC_PRESSURE_HVAC2", "path": "Climate", "fmt": { "len": 16, "max": 6553.4, "min": -6553.6, "mul": 2, "div": 10, "sign": true, "unit": "kilopascal" }, "name": "A/C pressure, enhanced"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0152"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_INTAKE_VVT_ACTUAL", "path": "Engine", "fmt": { "len": 16, "max": 511.1652, "min": -511.1808, "mul": 156, "div": 10000, "sign": true, "unit": "degrees" }, "name": "Valve timing opening, intake, actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0154"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "H6HEV_INTAKE_VVT_TARGET", "path": "Engine", "fmt": { "len": 16, "max": 255.5, "min": -255.5, "mul": 78, "div": 10000, "sign": true, "unit": "degrees" }, "name": "Valve timing opening, intake, target"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1611"}, "freq": 1,
+  "signals": [
+    {"id": "H6HEV_TURBOCHARGER_TGT", "path": "Engine", "fmt": { "len": 16, "max": 511, "mul": 1953, "div": 250000, "unit": "percent" }, "name": "Turbocharger, target opening"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1612"}, "freq": 1,
+  "signals": [
+    {"id": "H6HEV_TURBOCHARGER_ACT", "path": "Engine", "fmt": { "len": 16, "max": 511, "mul": 1953, "div": 250000, "unit": "percent" }, "name": "Turbocharger, actual opening"}
+  ]}
+],
+"signalGroups": [
+  {"id": "H6HEV_BMS_CELLS_V", "path": "Battery", "matchingRegex": "H6HEV_BAT_(CELL_\\d+)", "name": "Battery cell voltages", "suggestedMetricGroup": "batteryModulesVoltage"}
 ]
 }

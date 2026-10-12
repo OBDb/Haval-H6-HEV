@@ -1,0 +1,11 @@
+command_id: 7E0.220111
+test_cases:
+- expected_values:
+    H6HEV_FUEL_FLOW: 0
+  response: '7E8056201110000'
+- expected_values:
+    H6HEV_FUEL_FLOW: 9.87917
+  response: 7E80562011108FE
+- expected_values:
+    H6HEV_FUEL_FLOW: 32.99351
+  response: 7E8056201111E08

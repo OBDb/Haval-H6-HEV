@@ -1,0 +1,11 @@
+command_id: 763.7A3.22A012
+test_cases:
+- expected_values:
+    H6HEV_HVAC_EVAPORATOR_T_FRONT: 1
+  response: 7A30562A01200D2
+- expected_values:
+    H6HEV_HVAC_EVAPORATOR_T_FRONT: 5.5
+  response: 7A30562A01200FF
+- expected_values:
+    H6HEV_HVAC_EVAPORATOR_T_FRONT: 6
+  response: 7A30562A0120104

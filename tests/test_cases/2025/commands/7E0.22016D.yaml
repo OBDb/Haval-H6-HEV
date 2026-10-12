@@ -1,0 +1,11 @@
+command_id: 7E0.22016D
+test_cases:
+- expected_values:
+    H6HEV_INJECTION_PULSE_WIDTH: 0
+  response: 7E80762016D00000000
+- expected_values:
+    H6HEV_INJECTION_PULSE_WIDTH: 1.791
+  response: 7E80762016D000006FF
+- expected_values:
+    H6HEV_INJECTION_PULSE_WIDTH: 11.067
+  response: 7E80762016D00002B3B

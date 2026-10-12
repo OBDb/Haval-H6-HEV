@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E006
+test_cases:
+- expected_values:
+    H6HEV_BMS_PACK_VOLTAGE: 333.5
+  response: 7CB0562E0060D07
+- expected_values:
+    H6HEV_BMS_PACK_VOLTAGE: 355.6
+  response: 7CB0562E0060DE4

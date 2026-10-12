@@ -1,0 +1,14 @@
+command_id: 7E0.220113
+test_cases:
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_PRESSURE: 91.875
+  response: 7E8056201132DF0
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_PRESSURE: 93.99219
+  response: 7E8056201132EFF
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_PRESSURE: 94
+  response: 7E8056201132F00
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_PRESSURE: 195.64844
+  response: 7E80562011361D3

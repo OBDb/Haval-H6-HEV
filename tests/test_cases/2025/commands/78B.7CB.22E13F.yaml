@@ -1,0 +1,11 @@
+command_id: 78B.7CB.22E13F
+test_cases:
+- expected_values:
+    H6HEV_BMS_PACK_2S_RECHARGE_POWER_LIMIT: 35.4
+  response: 7CB0562E13F00B1
+- expected_values:
+    H6HEV_BMS_PACK_2S_RECHARGE_POWER_LIMIT: 50
+  response: 7CB0562E13F00FA
+- expected_values:
+    H6HEV_BMS_PACK_2S_RECHARGE_POWER_LIMIT: 52
+  response: 7CB0562E13F0104

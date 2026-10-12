@@ -1,0 +1,14 @@
+command_id: 78B.7CB.22E0DD
+test_cases:
+- expected_values:
+    H6HEV_BMS_LAST_SLEEP_DURATION: 58
+  response: 7CB0762E0DD0000003A
+- expected_values:
+    H6HEV_BMS_LAST_SLEEP_DURATION: 265
+  response: 7CB0762E0DD00000109
+- expected_values:
+    H6HEV_BMS_LAST_SLEEP_DURATION: 6518
+  response: 7CB0762E0DD00001976
+- expected_values:
+    H6HEV_BMS_LAST_SLEEP_DURATION: 6655
+  response: 7CB0762E0DD000019FF

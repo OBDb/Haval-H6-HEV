@@ -1,0 +1,11 @@
+command_id: 787.7C7.221109
+test_cases:
+- expected_values:
+    H6HEV_MCU_GMCU_MOTOR_T_1: 12
+  response: 7C70462110934
+- expected_values:
+    H6HEV_MCU_GMCU_MOTOR_T_1: 31
+  response: 7C70462110947
+- expected_values:
+    H6HEV_MCU_GMCU_MOTOR_T_1: 55
+  response: 7C7046211095F
