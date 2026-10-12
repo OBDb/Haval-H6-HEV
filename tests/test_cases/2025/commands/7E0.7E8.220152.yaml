@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.220152
+test_cases:
+- expected_values:
+    H6HEV_INTAKE_VVT_ACTUAL: 1.6692
+  response: 7E805620152006B
+- expected_values:
+    H6HEV_INTAKE_VVT_ACTUAL: -27.9552
+  response: 7E805620152F900
+- expected_values:
+    H6HEV_INTAKE_VVT_ACTUAL: -19.9836
+  response: 7E805620152FAFF
+- expected_values:
+    H6HEV_INTAKE_VVT_ACTUAL: -1.8408
+  response: 7E805620152FF8A

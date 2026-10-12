@@ -1,0 +1,14 @@
+command_id: 7E0.220132
+test_cases:
+- expected_values:
+    H6HEV_GEAR: 0
+  response: '7E80462013200'
+- expected_values:
+    H6HEV_GEAR: 1
+  response: '7E80462013201'
+- expected_values:
+    H6HEV_GEAR: 2
+  response: '7E80462013202'
+- expected_values:
+    H6HEV_GEAR: 7
+  response: '7E80462013207'

@@ -1,0 +1,11 @@
+command_id: 7E0.220181
+test_cases:
+- expected_values:
+    H6HEV_MISFIRES_CYL_3: 0
+  response: '7E8056201810000'
+- expected_values:
+    H6HEV_MISFIRES_CYL_3: 1
+  response: '7E8056201810001'
+- expected_values:
+    H6HEV_MISFIRES_CYL_3: 2
+  response: '7E8056201810002'

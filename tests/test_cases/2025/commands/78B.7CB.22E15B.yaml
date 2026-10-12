@@ -1,0 +1,14 @@
+command_id: 78B.7CB.22E15B
+test_cases:
+- expected_values:
+    H6HEV_BMS_PACK_ACCUMULATED_CHARGE_1: 4499.9
+  response: 7CB0762E15B0000AFC7
+- expected_values:
+    H6HEV_BMS_PACK_ACCUMULATED_CHARGE_1: 4556.7
+  response: 7CB0762E15B0000B1FF
+- expected_values:
+    H6HEV_BMS_PACK_ACCUMULATED_CHARGE_1: 4634.2
+  response: 7CB0762E15B0000B506
+- expected_values:
+    H6HEV_BMS_PACK_ACCUMULATED_CHARGE_1: 4661.8
+  response: 7CB0762E15B0000B61A

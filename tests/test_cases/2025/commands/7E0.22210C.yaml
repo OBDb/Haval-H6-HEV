@@ -1,0 +1,5 @@
+command_id: 7E0.22210C
+test_cases:
+- expected_values:
+    H6HEV_AC_PRESSURE_HVAC2: 65.6
+  response: 7E80562210C0148

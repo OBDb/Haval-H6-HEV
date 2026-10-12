@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E007
+test_cases:
+- expected_values:
+    H6HEV_BMS_TOTAL_CELL_VOLTAGES: 334
+  response: 7CB0562E007014D
+- expected_values:
+    H6HEV_BMS_TOTAL_CELL_VOLTAGES: 356
+  response: 7CB0562E0070163

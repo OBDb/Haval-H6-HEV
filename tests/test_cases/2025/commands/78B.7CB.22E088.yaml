@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E088
+test_cases:
+- expected_values:
+    H6HEV_BMS_MODULE_T_MAXIMUM: 13
+  response: 7CB0462E08835
+- expected_values:
+    H6HEV_BMS_MODULE_T_MAXIMUM: 33
+  response: 7CB0462E08849

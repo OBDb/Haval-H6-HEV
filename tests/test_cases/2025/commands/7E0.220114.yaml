@@ -1,0 +1,14 @@
+command_id: 7E0.220114
+test_cases:
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_T: 399.91377
+  response: 7E805620114702E
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_T: 446.92839
+  response: '7E8056201147804'
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_T: 464.81082
+  response: 7E8056201147AFF
+- expected_values:
+    H6HEV_TURBOCHARGER_INLET_T: 861.10705
+  response: 7E805620114BD0C

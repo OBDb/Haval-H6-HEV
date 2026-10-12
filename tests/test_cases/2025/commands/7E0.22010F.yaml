@@ -1,0 +1,14 @@
+command_id: 7E0.22010F
+test_cases:
+- expected_values:
+    H6HEV_BOOST_PRESSURE_ACTUAL: 91.76562
+  response: 7E80562010F2DE2
+- expected_values:
+    H6HEV_BOOST_PRESSURE_ACTUAL: 93.99219
+  response: 7E80562010F2EFF
+- expected_values:
+    H6HEV_BOOST_PRESSURE_ACTUAL: 94
+  response: 7E80562010F2F00
+- expected_values:
+    H6HEV_BOOST_PRESSURE_ACTUAL: 218.16406
+  response: 7E80562010F6D15

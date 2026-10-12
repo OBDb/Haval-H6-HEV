@@ -1,0 +1,11 @@
+command_id: 763.7A3.22A019
+test_cases:
+- expected_values:
+    H6HEV_HVAC_CABIN_T_FRONT: 10.5
+  response: 7A30562A0190195
+- expected_values:
+    H6HEV_HVAC_CABIN_T_FRONT: 21
+  response: 7A30562A01901FE
+- expected_values:
+    H6HEV_HVAC_CABIN_T_FRONT: 21.5
+  response: 7A30562A0190203

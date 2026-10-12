@@ -1,0 +1,14 @@
+command_id: 7E0.22016A
+test_cases:
+- expected_values:
+    H6HEV_BOOST_PRESSURE_VALUE: 91.75
+  response: 7E80562016A2DE0
+- expected_values:
+    H6HEV_BOOST_PRESSURE_VALUE: 94
+  response: 7E80562016A2F00
+- expected_values:
+    H6HEV_BOOST_PRESSURE_VALUE: 99.99219
+  response: 7E80562016A31FF
+- expected_values:
+    H6HEV_BOOST_PRESSURE_VALUE: 218.82031
+  response: 7E80562016A6D69

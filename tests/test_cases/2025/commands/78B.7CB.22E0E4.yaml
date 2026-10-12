@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E0E4
+test_cases:
+- expected_values:
+    H6HEV_BMS_PACK_LOOP_INLET_T: 13
+  response: 7CB0462E0E435
+- expected_values:
+    H6HEV_BMS_PACK_LOOP_INLET_T: 28
+  response: 7CB0462E0E444

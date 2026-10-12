@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E089
+test_cases:
+- expected_values:
+    H6HEV_BMS_MODULE_T_MINIMUM: 12
+  response: 7CB0462E08934
+- expected_values:
+    H6HEV_BMS_MODULE_T_MINIMUM: 28
+  response: 7CB0462E08944

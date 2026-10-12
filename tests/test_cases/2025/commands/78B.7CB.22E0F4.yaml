@@ -1,0 +1,11 @@
+command_id: 78B.7CB.22E0F4
+test_cases:
+- expected_values:
+    H6HEV_BMS_BATT_SOC: 43.1
+  response: 7CB0562E0F401AF
+- expected_values:
+    H6HEV_BMS_BATT_SOC: 50.9
+  response: 7CB0562E0F401FD
+- expected_values:
+    H6HEV_BMS_BATT_SOC: 51.2
+  response: 7CB0562E0F40200

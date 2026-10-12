@@ -1,0 +1,11 @@
+command_id: 78B.7CB.22E0C6
+test_cases:
+- expected_values:
+    H6HEV_BMS_PACK_DISCHARGE_CURRENT_LIMIT: 273.8
+  response: 7CB0562E0C61CC9
+- expected_values:
+    H6HEV_BMS_PACK_DISCHARGE_CURRENT_LIMIT: 284.6
+  response: 7CB0562E0C61CFF
+- expected_values:
+    H6HEV_BMS_PACK_DISCHARGE_CURRENT_LIMIT: 284.8
+  response: 7CB0562E0C61D00

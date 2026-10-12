@@ -1,0 +1,8 @@
+command_id: 78B.7CB.22E00A
+test_cases:
+- expected_values:
+    H6HEV_BMS_MAX_CELL_VOLTAGE_POSITION: 66
+  response: 7CB0462E00A41
+- expected_values:
+    H6HEV_BMS_MAX_CELL_VOLTAGE_POSITION: 92
+  response: 7CB0462E00A5B

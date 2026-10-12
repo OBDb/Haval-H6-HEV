@@ -1,0 +1,11 @@
+command_id: 787.7C7.221110
+test_cases:
+- expected_values:
+    H6HEV_MCU_GMCU_MOTOR_SPEED: -1
+  response: 7C7056211107FFF
+- expected_values:
+    H6HEV_MCU_GMCU_MOTOR_SPEED: 3328
+  response: 7C7056211108D00
+- expected_values:
+    H6HEV_MCU_GMCU_MOTOR_SPEED: 4368
+  response: 7C7056211109110
