@@ -1,4 +1,7 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E0", "type": "engine" }
+  ],
+  "commands": [
 { "hdr": "763", "rax": "7A3", "cmd": {"22": "A012"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "H6HEV_HVAC_EVAPORATOR_T_FRONT", "path": "Climate", "fmt": { "len": 16, "max": 655.25, "min": -20, "div": 10, "add": -20, "unit": "celsius" }, "name": "Evaporator temperature, front"}
@@ -7,7 +10,7 @@
   "signals": [
     {"id": "H6HEV_HVAC_CABIN_T_FRONT", "path": "Climate", "fmt": { "len": 16, "max": 655.15, "min": -30, "div": 10, "add": -30, "unit": "celsius" }, "name": "Cabin temperature, front"}
   ]},
-{ "hdr": "76C", "rax": "7AC", "fcm1": true, "dbg": true, "cmd": {"22": "0210"}, "freq": 15,
+{ "hdr": "76C", "rax": "7AC", "fcm1": true, "cmd": {"22": "0210"}, "freq": 15, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "H6HEV_FL_TIRE_P", "path": "Tires", "fmt": {           "len": 8, "max": 349,             "mul": 137, "div": 100,             "unit": "kilopascal" }, "name": "Front left tire pressure"},
     {"id": "H6HEV_FL_TIRE_T", "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 205, "min": -50,                         "add": -50, "unit": "celsius"    }, "name": "Front left tire temperature"},
@@ -141,7 +144,7 @@
   "signals": [
     {"id": "H6HEV_BMS_PACK_SOE", "path": "Battery", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "kilowattHours" }, "name": "State of energy", "suggestedMetric": "tractionBatteryCapacity"}
   ]},
-{ "hdr": "78B", "rax": "7CB", "fcm1": true, "dbg": true, "cmd": {"22": "E114"}, "freq": 1,
+{ "hdr": "78B", "rax": "7CB", "fcm1": true, "cmd": {"22": "E114"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "H6HEV_BAT_CELL_01", "path": "Battery", "fmt": {             "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 01"},
     {"id": "H6HEV_BAT_CELL_02", "path": "Battery", "fmt": {"bix": 16,   "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 02"},
@@ -236,7 +239,7 @@
     {"id": "H6HEV_BAT_CELL_91", "path": "Battery", "fmt": {"bix": 1440, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 91"},
     {"id": "H6HEV_BAT_CELL_92", "path": "Battery", "fmt": {"bix": 1456, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "Battery cell 92"}
   ]},
-{ "hdr": "78B", "rax": "7CB", "fcm1": true, "dbg": true, "cmd": {"22": "E115"}, "freq": 5,
+{ "hdr": "78B", "rax": "7CB", "fcm1": true, "cmd": {"22": "E115"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "H6HEV_BMS_MODULE_1_T", "path": "Battery", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 1 temperature"},
     {"id": "H6HEV_BMS_MODULE_2_T", "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery module 2 temperature"},
@@ -373,11 +376,11 @@
   "signals": [
     {"id": "H6HEV_INTAKE_VVT_TARGET", "path": "Engine", "fmt": { "len": 16, "max": 255.5, "min": -255.5, "mul": 78, "div": 10000, "sign": true, "unit": "degrees" }, "name": "Valve timing opening, intake, target"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1611"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1611"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "H6HEV_TURBOCHARGER_TGT", "path": "Engine", "fmt": { "len": 16, "max": 511, "mul": 1953, "div": 250000, "unit": "percent" }, "name": "Turbocharger, target opening"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1612"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1612"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "H6HEV_TURBOCHARGER_ACT", "path": "Engine", "fmt": { "len": 16, "max": 511, "mul": 1953, "div": 250000, "unit": "percent" }, "name": "Turbocharger, actual opening"}
   ]}

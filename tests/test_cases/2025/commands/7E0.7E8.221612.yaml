@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.221612
+test_cases:
+- expected_values:
+    H6HEV_TURBOCHARGER_ACT: 42.7707
+  response: '7E8056216121563'
+- expected_values:
+    H6HEV_TURBOCHARGER_ACT: 58.29314
+  response: 7E8056216121D26
+- expected_values:
+    H6HEV_TURBOCHARGER_ACT: 99.2124
+  response: 7E805621612319C
+- expected_values:
+    H6HEV_TURBOCHARGER_ACT: 99.9936
+  response: '7E8056216123200'
+- expected_values:
+    H6HEV_TURBOCHARGER_ACT: 100.04047
+  response: '7E8056216123206'
+- expected_values:
+    H6HEV_TURBOCHARGER_ACT: 100.08734
+  response: 7E805621612320C
+- expected_values:
+    H6HEV_TURBOCHARGER_ACT: 100.13422
+  response: '7E8056216123212'

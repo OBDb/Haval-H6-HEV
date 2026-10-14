@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.221611
+test_cases:
+- expected_values:
+    H6HEV_TURBOCHARGER_TGT: 43.76282
+  response: 7E80562161115E2
+- expected_values:
+    H6HEV_TURBOCHARGER_TGT: 60.12115
+  response: 7E8056216111E10
+- expected_values:
+    H6HEV_TURBOCHARGER_TGT: 99.9936
+  response: '7E8056216113200'
