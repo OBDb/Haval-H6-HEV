@@ -1,8 +1,8 @@
 command_id: 7E0.220106
 test_cases:
 - expected_values:
-    H6HEV_FUEL_LEVEL_LITERS: 27
-  response: 7E805620106010E
+    H6HEV_FUEL_LEVEL_LITERS: 26
+  response: '7E8056201060104'
 - expected_values:
     H6HEV_FUEL_LEVEL_LITERS: 51.1
   response: 7E80562010601FF
