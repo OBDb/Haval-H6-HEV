@@ -4,11 +4,11 @@ test_cases:
     H6HEV_OIL_T: 10.22677
   response: 7E8056201072F3B
 - expected_values:
+    H6HEV_OIL_T: 20.82029
+  response: 7E80562010730FF
+- expected_values:
     H6HEV_OIL_T: 38.93709
   response: '7E8056201073404'
-- expected_values:
-    H6HEV_OIL_T: 44.81978
-  response: 7E80562010734FF
 - expected_values:
     H6HEV_OIL_T: 104.93568
   response: 7E8056201073F04
